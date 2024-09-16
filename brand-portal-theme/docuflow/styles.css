@@ -348,8 +348,8 @@ article>.bullet-3-column>.notion-column>.notion-sync-block>.notion-collection .n
     height: auto;
 }
 
-article>.bullet-3-column >.notion-column:first-child .notion-sync-block .notion-page-link {
-    padding: 0;
+article>.bullet-3-column > :first-child .notion-sync-block .notion-page-link {
+    padding: 4px 4px 4px 0px;
 }
 
 .notion-page-title-text {
@@ -595,15 +595,15 @@ pre[class*=language-] {
 }
 
 article>.bullet-3-column>:first-child .active {
-    background-color: #F5F5F5;
-    padding: 8px 8px 8px 0px;
-    border-radius: 8px;
+
 }
 
 article>.bullet-3-column>:first-child .active .notion-page-title-text {
     overflow: initial;
-    font-weight: 600;
     opacity: 1;
+    background-color: #F5F5F5;
+    padding: 8px 8px 8px 0px !important;
+    border-radius: 8px;
 }
 
 article>.bullet-3-column>:first-child .active .notion-page-title-text>b {
