@@ -227,15 +227,6 @@ article>.bullet-3-column>:nth-child(3) {
 
 }
 
-.notion-page-title-text:hover::before {
-    content: "•";
-    position: absolute;
-    left: -12.4px;
-    top: -4px;
-    font-size: 20px;
-    color: lightgray;
-}
-
 .notion-link .notion-page-title-text:hover {
     color: var(--sidenav-hover);
     overflow: initial;
@@ -603,19 +594,19 @@ pre[class*=language-] {
     white-space: pre-wrap;
 }
 
-article>.bullet-3-column>.active {
+article>.bullet-3-column>:first-child .active {
     background-color: #F5F5F5;
     padding: 8px 8px 8px 0px;
     border-radius: 8px;
 }
 
-article>.bullet-3-column>.active .notion-page-title-text {
+article>.bullet-3-column>:first-child .active .notion-page-title-text {
     overflow: initial;
     font-weight: 600;
     opacity: 1;
 }
 
-article>.bullet-3-column>.active .notion-page-title-text>b {
+article>.bullet-3-column>:first-child .active .notion-page-title-text>b {
     color: var(--link-hover) !important;
     overflow: initial;
     font-weight: 600;
