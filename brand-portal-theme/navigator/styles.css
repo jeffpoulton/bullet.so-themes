@@ -15,8 +15,8 @@
     --heading1: calc(var(--heading-font-size) * 1.275);
     --heading2: calc(var(--heading-font-size) * 1.334);
     --heading3: calc(var(--heading-font-size) * 0.8);
-    --primary-font: "Work Sans";
-    --secondary-font: 'Work Sans';
+    --primary-font: "Inter";
+    --secondary-font: 'Inter';
     --brand-color: var(--navbar-btn-bg-color);
     --footer-bg-color: var(--bg-color);
     --db-card-shadow-spread: 36px;

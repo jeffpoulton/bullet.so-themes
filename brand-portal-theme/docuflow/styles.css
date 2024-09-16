@@ -223,7 +223,6 @@ article>.bullet-3-column>:nth-child(3) {
     font-size: .9rem;
     color: var(--fg-color);
     font-weight: 400;
-    padding-left: 22px;
     opacity: 0.9;
 
 }
@@ -333,7 +332,7 @@ article>.bullet-3-column>.notion-column>.notion-sync-block>.notion-collection .n
 }
 
 .notion-sync-block .notion-list-collection .notion-page-title-text {
-    padding-left: 30px;
+    padding-left: 22px;
 
 }
 
@@ -604,27 +603,23 @@ pre[class*=language-] {
     white-space: pre-wrap;
 }
 
-.active .notion-page-title-text {
-    color: var(--link-hover) !important;
+article>.bullet-3-column>.active {
+    background-color: #F5F5F5;
+    padding: 8px 8px 8px 0px;
+    border-radius: 8px;
+}
+
+article>.bullet-3-column>.active .notion-page-title-text {
     overflow: initial;
     font-weight: 600;
     opacity: 1;
 }
 
-.active .notion-page-title-text>b {
+article>.bullet-3-column>.active .notion-page-title-text>b {
     color: var(--link-hover) !important;
     overflow: initial;
     font-weight: 600;
     opacity: 1;
-}
-
-.active .notion-page-title-text::before {
-    content: "•";
-    position: absolute;
-    left: -13.4px;
-    top: -4px;
-    font-size: 20px;
-    color: unset;
 }
 
 .notion-row {
@@ -694,15 +689,6 @@ details[open]>summary::before {
 .notion-page-has-cover.notion-page-has-icon.notion-page-has-text-icon {
     padding-top: 0px;
 }
-
-
-
-/* .active-toc>span:hover,
-.active-toc:hover {
-    color: var(--link-hover);
-    font-weight: 600;
-    opacity: 1;
-} */
 
 article>.bullet-3-column {
     padding-top: 0px;
