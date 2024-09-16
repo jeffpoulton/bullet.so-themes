@@ -148,7 +148,7 @@ html {
 }
 
 /*sidebar css*/
-.notion-link{
+.notion-link {
     width: fit-content;
     border: unset;
     /* padding: 3px 5px; */
@@ -171,6 +171,7 @@ article>.bullet-3-column>:first-child {
     padding: 4rem 1rem 4rem 7rem;
 
 }
+
 article>.bullet-2-column>:first-child {
     height: 100vh;
     overflow-y: scroll;
@@ -202,7 +203,7 @@ article>.bullet-3-column>:nth-child(3) {
     font-size: .9rem;
     color: var(--fg-color);
     font-weight: 400;
-    padding-left: 15px;
+    padding-left: 22px;
     opacity: 0.9;
 
 }
@@ -210,7 +211,7 @@ article>.bullet-3-column>:nth-child(3) {
 .notion-page-title-text:hover::before {
     content: "•";
     position: absolute;
-    left: -13.4px;
+    left: -12.4px;
     top: -4px;
     font-size: 20px;
     color: lightgray;
@@ -299,9 +300,8 @@ article>.bullet-3-column>.notion-column>.notion-sync-block>.notion-collection .n
 }
 
 .notion-sync-block .notion-list-collection {
-    padding-left: 7px;
-    border-left: 2px solid #cbcdf495;
-    padding-bottom: 5px;
+   border: 0;
+   padding: 0;
 }
 
 .notion-sync-block .notion-list-collection .notion-page-title-text,
@@ -325,9 +325,10 @@ article>.bullet-3-column>.notion-column>.notion-sync-block>.notion-collection .n
     color: var(--sidenav-hover);
 }
 
-.notion-sync-block .notion-list-collection .notion-page-title-text:hover b{
+.notion-sync-block .notion-list-collection .notion-page-title-text:hover b {
     color: var(--sidenav-hover);
 }
+
 .notion-sync-block .notion-page-link:hover {
     background-color: unset;
 }
@@ -335,6 +336,10 @@ article>.bullet-3-column>.notion-column>.notion-sync-block>.notion-collection .n
 .notion-sync-block .notion-page-link {
     padding: 10px 0px;
     height: auto;
+}
+
+article>.bullet-3-column >.notion-column:first-child .notion-sync-block .notion-page-link {
+    padding: 0;
 }
 
 .notion-page-title-text {
@@ -579,14 +584,14 @@ pre[class*=language-] {
     white-space: pre-wrap;
 }
 
-.active .notion-page-title-text{
+.active .notion-page-title-text {
     color: var(--link-hover) !important;
     overflow: initial;
     font-weight: 600;
     opacity: 1;
 }
 
-.active .notion-page-title-text > b{
+.active .notion-page-title-text>b {
     color: var(--link-hover) !important;
     overflow: initial;
     font-weight: 600;
@@ -715,7 +720,7 @@ article>.bullet-3-column>:nth-child(3) .notion-inline-underscore {
 }
 
 .notion-column {
-    overflow:auto;
+    overflow: auto;
     padding-top: 0;
 }
 
@@ -974,7 +979,7 @@ pre[class*=language-] {
 
 .notion-collection-group .notion-collection-group-title {
     position: relative;
-    padding: 12px 21px;
+    padding: 8px 0 0 16px !important;
     font-size: .9rem;
     font-weight: 400;
     color: var(--fg-color);
@@ -1037,8 +1042,15 @@ pre[class*=language-] {
     }
 
     article>.bullet-3-column>:first-child {
-        /* width: 18% !important; */
-        padding: 4rem;
+        padding: 4em 0em 0em 3em;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    article>.bullet-3-column>:first-child::-webkit-scrollbar {
+        display: none;
     }
 
     article>.bullet-3-column>:nth-child(5) {
